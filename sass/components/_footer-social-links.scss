@@ -1,0 +1,29 @@
+.social-links {
+  fill: var(--second-txt-bcg-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--time) var(--animation-style);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-active-bcg-clr);
+  }
+}
+
+.connection {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-items {
+    background-color: var(--bcg-clr-links);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,44 @@
+.button-menu {
+  background-color: var(--button-bcg-clr);
+  color: var(--title-text-color);
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  transition: background-color var(--time) var(--animation-style),
+    color var(--time) var(--animation-style),
+    box-shadow var(--time) var(--animation-style);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-active-bcg-clr);
+    color: var(--second-txt-bcg-color);
+    box-shadow: 0px 2px 2px var(--box-shadow-clr),
+      0px 1px 2px var(--box-shadow-clr), 0px 3px 1px var(--box-shadow-clr);
+  }
+
+  &-list {
+    margin-right: 8px;
+  }
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 0;
+  margin-bottom: 50px;
+
+  & :last-child {
+    margin-right: 0;
+  }
+}

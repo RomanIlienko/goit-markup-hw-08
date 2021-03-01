@@ -1,0 +1,31 @@
+.developers-social-links {
+  fill: var(--fill-clr);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--time) var(--animation-style),
+    fill var(--time) var(--animation-style);
+
+  &:focus,
+  &:hover {
+    fill: var(--second-txt-bcg-color);
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+}
+
+.team-social {
+  &-list {
+    display: flex;
+  }
+
+  &-items + .team-social-items {
+    margin-left: 10px;
+  }
+}

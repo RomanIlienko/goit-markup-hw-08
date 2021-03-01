@@ -1,0 +1,126 @@
+.border-line {
+  border-bottom: 1px solid var(--border-clr);
+}
+
+.portfolio {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &-img {
+    display: block;
+  }
+
+  &-section {
+    background-color: var(--bcg-clr);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-titles {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--title-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &-text {
+    margin-top: 0;
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+}
+
+/* photocard set */
+
+.photocard-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-items {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    outline: 1px solid var(--team-border-clr);
+  }
+
+  &-description {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+  }
+
+  &-items:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+/* Active links */
+
+.active-links {
+  transition: box-shadow var(--time) var(--animation-style);
+
+  &:hover,
+  &:focus {
+    display: inline-block;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  &:hover .photocard-overlay,
+  &:focus .photocard-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.last-items {
+  margin-bottom: 0;
+}
+
+/* PHOTOCARD SET OVERLAY */
+
+.photocard {
+  &-overlay {
+    top: 0;
+    left: 0;
+    background-color: var(--animation-color);
+    transition: transform var(--time) var(--animation-style);
+    transform: translateY(100%);
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    opacity: 0;
+  }
+}
+
+/* Overlay */
+
+.overlay {
+  &-description {
+    color: var(--bcg-clr);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+
+  &-box {
+    position: relative;
+    overflow: hidden;
+  }
+}
