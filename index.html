@@ -22,7 +22,7 @@
         <div class="main-nav container">
             <nav class="header-nav"> 
                 <a href="index.html" class="header-logo"><span class="header-web-color">Web</span>Studio</a>
-                <button class="burger-btn" type="button">
+                <button class="burger-btn" type="button" data-menu-button>
                     <svg class="burger-menu" width="24px" height="16px">
                         <use href="./images/svg/sprite.svg#icon-burgermenu"></use>
                     </svg>
@@ -58,7 +58,12 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
+            <button class="mobile-menu-close-btn" type="button" data-menu-close>
+                <svg class="mobile-close-icon" width="40px" height="40px">
+                    <use href="./images/svg/sprite.svg#icon-closemobile"></use>
+                </svg>
+            </button>
             <ul class="mobile-menu-list">
                 <li class="mobile-menu-items">
                     <a href="./index.html" class="mobile-menu-links">Студия</a>
@@ -531,6 +536,7 @@
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
